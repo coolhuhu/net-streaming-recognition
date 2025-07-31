@@ -7,12 +7,7 @@ function(download_portaudio)
   # If you don't have access to the Internet, please download it to your
   # local drive and modify the following line according to your needs.
   set(possible_file_locations
-    $ENV{HOME}/Downloads/pa_stable_v190700_20210406.tgz
-    $ENV{HOME}/asr/pa_stable_v190700_20210406.tgz
-    ${CMAKE_SOURCE_DIR}/pa_stable_v190700_20210406.tgz
-    ${CMAKE_BINARY_DIR}/pa_stable_v190700_20210406.tgz
-    /tmp/pa_stable_v190700_20210406.tgz
-    /star-fj/fangjun/download/github/pa_stable_v190700_20210406.tgz
+    ${PROJECT_SOURCE_DIR}/third-part/portaudio-19.7.0.zip
   )
 
   foreach(f IN LISTS possible_file_locations)
